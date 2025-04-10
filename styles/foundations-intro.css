@@ -1,0 +1,17 @@
+div {
+  background-color: red;
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+p {
+  background-color: green;
+  color: white
+}
+
+button {
+  background-color: #F2A93B;
+}
