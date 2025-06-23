@@ -1,7 +1,20 @@
+/* SOLUTION COMMENTED OUT*/
+/* 6/23/25 Fuzzy @ combining flex alignment with padding & other non-flex layout properties */
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
 }
+
+/* .header {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
 
 .logo {
   font-size: 48px;
@@ -14,7 +27,17 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
 }
+
+/* ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+} */
 
 a {
   font-size: 22px;
@@ -23,3 +46,7 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+
+
+
