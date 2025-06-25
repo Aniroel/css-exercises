@@ -46,3 +46,44 @@ a {
 ul {
   list-style-type: none;
 }
+
+
+/* SOLUTION */
+
+.header,
+.links,
+.left,
+.right {
+  display: flex;
+  gap: 16px;
+  /*SOLUTION: padding: 8px; */
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.left {
+  justify-content: flex-start;
+ 
+}
+
+.right {
+  justify-content: flex-end;
+ 
+}
+
+/* ODIN SOLUTION 
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+Why was margin/padding reset?  For gap?
+
+*/
