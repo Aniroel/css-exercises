@@ -12,6 +12,49 @@ img {
   font-weight: 900;
 }
 
+/* SOLUTION */
+
+.title {
+  display: flex; 
+  justify-content: center;
+  margin-bottom: 32px; /*✅*/
+}
+
+.cards {
+  display: flex; /*✅*/
+  justify-content: center; /*✅*/
+  gap: 52px; /*✅*/
+}
+
+.card {
+  flex-basis: 200px; /* max-width: 200px */
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* ODIN SOLUTION + NOTES
+
+body {
+  text-align: center;
+}
+.title {
+  margin-bottom: 32px;
+}
+
+HTML:
+1-created a info-container for each img+text
+2-created a container for each info-container
+
+CSS:
+1-utilized basic css styling
+  body { text-align: center } - this was the most efficient property to satisfy requirements
+
+NEXT:
+1-combining basic css & flex properties cleanly yet efficiently
+  
+*/
+
+
 /* do not edit this footer */
 .footer {
   position: fixed;
@@ -24,3 +67,4 @@ img {
   justify-content: center;
   background: #eee;
 }
+
