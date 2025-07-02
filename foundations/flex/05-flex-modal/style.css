@@ -67,3 +67,42 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* MY SOLUTION 
+• moved close-button to end 
+*/
+
+
+.modal { /* ✅ */
+  display: flex;
+  gap: 10px;  
+  padding: 1rem; /* odin: used px */
+}
+
+h1 {
+  margin-top: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.icon { /* ✅ */
+  flex-shrink: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.btns { /* ❌ */ 
+/*  semantically inaccurate - use margin instead
+    use margin-bottom on .text to keep consistent with natural top -> down flow of html
+*/
+  padding-top: 1rem;
+}
+
+.close-button {
+  flex-shrink: 0;
+}
